@@ -43,14 +43,6 @@ function initWorldMatrix(matrix) {
 
 }
 
-function deleteWorldMatrix(matrix) {
-    for (let row = 0; row < matrix.length; row++) {
-        document.querySelector('.world-matrix').childNodes.forEach(node => {
-            node.remove(node);
-        });
-    }
-}
-
 
 function blockClickHandle(e) {
 

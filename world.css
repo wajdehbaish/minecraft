@@ -118,6 +118,8 @@ div[data-tile-type="8"] {
 }
 
 .tool_image {
+    width: 4vmax;
+    height: 4vmax;
     margin: 0 auto;
 }
 
@@ -155,7 +157,8 @@ div[data-tool-name="axe"] {
     border-radius: 10px;
 }
 
-@media screen and (width: 600px) {
+
+/* @media (max-width:700px) {
     body {
         background: black;
     }
@@ -163,4 +166,4 @@ div[data-tool-name="axe"] {
         width: 90%;
         height: 90%;
     }
-}
+} */
