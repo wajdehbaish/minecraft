@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Minecraft Font";
+    src: url("./minecraft-font.ttf") format("truetype");
+}
+
+.world-zone {
+    display: flex;
+    background: gray;
+    height: 100vh;
+    flex-grow: 6;
+}
+
+.world-matrix {
+    background-color: rgb(201, 201, 201);
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(20, auto);
+    grid-template-rows: repeat(auto, auto);
+    /* width: fit-content; */
+}
+
+.tile:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(205, 205, 205, 0.9);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(205, 205, 205, 0.9);
+    box-shadow: inset 0px 0px 0px 1px rgba(205, 205, 205, 0.9);
+}
+
+div[data-tile-type="0"] {
+    background-color: rgb(131, 183, 238);
+}
+
+div[data-tile-type="1"] {
+    background-color: white;
+}
+
+div[data-tile-type="2"] {
+    background: url("./img/rock.png") no-repeat center center/cover;
+}
+
+div[data-tile-type="3"] {
+    background: url("./img/grass.png") no-repeat center center/cover;
+}
+
+div[data-tile-type="4"] {
+    background: url("./img/soil.jpg") no-repeat center center/cover;
+}
+
+div[data-tile-type="5"] {
+    background: url("./img/treeTrunck.png") no-repeat center center/cover;
+}
+
+div[data-tile-type="6"] {
+    background: url("./img/tree-leaves.png") no-repeat center center/cover;
+}
+
+div[data-tile-type="7"] {
+    background: url("./img/alt-water.jpg")no-repeat center center/cover;
+}
+
+div[data-tile-type="8"] {
+    background: url("./img/R\ \(1\).png")no-repeat center center/cover;
+}
+
+.bank {
+    display: flex;
+    margin: 20px;
+}
+
+.block {
+    margin: 1vmax;
+    width: 5vmax;
+    height: 5vmax;
+}
+
+.materials {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.tools-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+.tool {
+    width: 7vmax;
+    height: 7vmax;
+    margin: 15px auto;
+    background-color: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.tool[data-tool-status="active"] {
+    background-color: red;
+}
+
+.tool:hover {
+    background-color: red;
+}
+
+.tool_image {
+    margin: 0 auto;
+}
+
+.tool_name {
+    margin: 10px 0 3px 0;
+    color: var(--primary-color);
+}
+
+div[data-tool-name="pickaxe"] {
+    background: url("./img/stone_pickaxe.png") no-repeat center center/cover;
+    /* background-position: 4px -5px; */
+    width: 5vmax;
+}
+
+div[data-tool-name="shovel"] {
+    background: url("./img/stone_shovel.png") no-repeat center center/cover;
+    /* background-position: -1px -2px; */
+    width: 5vmax;
+}
+
+div[data-tool-name="axe"] {
+    background: url("./img/stone_axe.png") no-repeat center center/cover;
+    /* background-position: 1px -2px; */
+    width: 5vmax;
+}
+
+.counter {
+    font-size: 3vmin;
+    color: white;
+    background-color: black;
+}
+
+#restart {
+    background: black;
+    color: white;
+    border: 2px white solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background: black;
+    }
+    .tool_image {
+        width: 90%;
+        height: 90%;
+    }
+}

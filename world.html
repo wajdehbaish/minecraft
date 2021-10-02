@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./world.css">
+    <script src="./world.js" defer type="module"></script>
+</head>
+
+<body>
+
+    <div class="world-zone">
+        <div class="materials">
+            <div class="bank">
+                <div class="block" data-tile-type="2" id="rock"><span class="counter" id="rock-counter">0</span></div>
+                <div class="block" data-tile-type="3" id="grass"><span class="counter" id="grass-counter">0</span></div>
+            </div>
+            <div class="bank">
+                <div class="block" data-tile-type="5" id="treeTrunck"><span class="counter" id="treeTrunck-counter">0</span></div>
+                <div class="block" data-tile-type="6" id="treeleaves"><span class="counter" id="treeleaves-counter">0</span></div>
+            </div>
+        </div>
+        <div class="world-matrix"></div>
+
+        <div class="tools-main">
+            <input type="button" value="restart-game" id="restart" onclick="window.location.reload();">
+            <div class="tool">
+                <div class="tool_image" data-tool-name="pickaxe" id="pickaxe"></div>
+                <div class="tool_name">pickaxe</div>
+            </div>
+            <div class="tool">
+                <div class="tool_image" data-tool-name="shovel" id="shovel"></div>
+                <div class="tool_name">shovel</div>
+            </div>
+            <div class="tool">
+                <div class="tool_image" data-tool-name="axe" id="axe"></div>
+                <div class="tool_name">axe</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
