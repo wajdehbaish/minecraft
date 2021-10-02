@@ -101,8 +101,8 @@ div[data-tile-type="8"] {
 }
 
 .tool {
-    width: 7vmax;
-    height: 7vmax;
+    width: 8vmax;
+    height: 8vmax;
     margin: 15px auto;
     background-color: none;
     border: 2px solid black;
@@ -156,14 +156,3 @@ div[data-tool-name="axe"] {
     padding: 5px;
     border-radius: 10px;
 }
-
-
-/* @media (max-width:700px) {
-    body {
-        background: black;
-    }
-    .tool_image {
-        width: 90%;
-        height: 90%;
-    }
-} */
