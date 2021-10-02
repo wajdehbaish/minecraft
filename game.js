@@ -9,13 +9,13 @@ const rock = document.querySelector('#rock'),
 
 
 export function addEventListenerToAllGenerators() {
-    rock.addEventListener('click', () => updateGenerator('rock'))
-    grass.addEventListener('click', () => updateGenerator('grass'))
-    treeTrunck.addEventListener('click', () => updateGenerator('treeTrunck'))
-    treeleaves.addEventListener('click', () => updateGenerator('treeleaves'))
-    pickaxe.addEventListener('click', () => updateGenerator('pickaxe'))
-    shovel.addEventListener('click', () => updateGenerator('shovel'))
-    axe.addEventListener('click', () => updateGenerator('axe'))
+    rock.addEventListener('click', () => { updateGenerator('rock') })
+    grass.addEventListener('click', () => { updateGenerator('grass') })
+    treeTrunck.addEventListener('click', () => { updateGenerator('treeTrunck') })
+    treeleaves.addEventListener('click', () => { updateGenerator('treeleaves') })
+    pickaxe.addEventListener('click', () => { updateGenerator('pickaxe') })
+    shovel.addEventListener('click', () => { updateGenerator('shovel') })
+    axe.addEventListener('click', () => { updateGenerator('axe') })
 
 }
 
